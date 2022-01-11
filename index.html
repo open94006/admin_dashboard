@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./dashboard_icon.ico" type="image/x-icon" />
+    <title>Responsive Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <span class="title">Brand name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                        </span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="key-outline"></ion-icon>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="choice">
+                    <select class="choiceYear">
+                        <option>Dog</option>
+                        <option>Cat</option>
+                        <option>Hamster</option>
+                        <option>Parrot</option>
+                        <option>Spider</option>
+                        <option>Goldfish</option>
+                    </select>
+                </div>
+                <!-- 搜尋 -->
+                <div class="search">
+                    <label for="">
+                        <input type="text" name="" id="" placeholder="搜尋...">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- 使用者 -->
+                <div class="user">
+                    <img src="user.png">
+                </div>
+            </div>
+
+            <!-- 圖卡 -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">每日觀看數</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">300</div>
+                        <div class="cardName">銷售</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">68</div>
+                        <div class="cardName">留言數</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$28,304</div>
+                        <div class="cardName">收益</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 資料列表 -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>最新訂單</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>姓名</td>
+                                <td>價格</td>
+                                <td>付款方式</td>
+                                <td>狀態</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MacBook Pro</td>
+                                <td>$39900</td>
+                                <td>分期付款</td>
+                                <td><span class="status delivered">已送出</span></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12 Pro</td>
+                                <td>$29900</td>
+                                <td>分期付款</td>
+                                <td><span class="status return">退回</span></td>
+                            </tr>
+                            <tr>
+                                <td>AirPods Pro</td>
+                                <td>$4999</td>
+                                <td>現金</td>
+                                <td><span class="status pending">待售出</span></td>
+                            </tr>
+                            <tr>
+                                <td>Electrolux 空氣清淨機</td>
+                                <td>$15288</td>
+                                <td>分期付款</td>
+                                <td><span class="status inprogress">正在寄送</span></td>
+                            </tr>
+                            <tr>
+                                <td>小米手環5</td>
+                                <td>$750</td>
+                                <td>現金</td>
+                                <td><span class="status delivered">已送出</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bowers & Wilkins 音響</td>
+                                <td>$53800</td>
+                                <td>分期付款</td>
+                                <td><span class="status pending">待售出</span></td>
+                            </tr>
+                            <tr>
+                                <td>國際牌咖啡機</td>
+                                <td>$3900</td>
+                                <td>現金</td>
+                                <td><span class="status return">退回</span></td>
+                            </tr>
+                            <tr>
+                                <td>FUJIFILM 印表機</td>
+                                <td>$11970</td>
+                                <td>現金</td>
+                                <td><span class="status inprogress">正在寄送</span></td>
+                            </tr>
+                            <tr>
+                                <td>華碩 NVIDIA顯示卡</td>
+                                <td>$3590</td>
+                                <td>現金</td>
+                                <td><span class="status return">退回</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 最新顧客 -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>最新顧客</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img1.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img2.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img3.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img4.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img5.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img6.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="img7.jpg" /></div>
+                            </td>
+                            <td>
+                                <h4>Daniel</h4><span>Taiwan</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Menu開合
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        // 選取該列表時，變化效果保留
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink))
+
+let choice = document.querySelector('.choiceYear')
+choice.addEventListener('change', function () {
+    alert("hi!");
+})
+    </script>
+</body>
+
+</html>
